@@ -1,3 +1,22 @@
 a {
     color: #212529;
 }
+td { 
+    vertical-align: middle;
+}
+td:last-child a {
+    text-decoration: underline;
+}
+th { 
+    text-align: center;
+    vertical-align: middle;
+}
+u {
+    cursor: pointer;
+}
+u:hover {
+    text-decoration: none;
+}
+.colspan {
+    text-align: center;
+}

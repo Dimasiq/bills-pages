@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Розничная торговля</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5 bg-dark">
+      <a class="navbar-brand mb-0 mr-1 h1" href="#">Налоги для ИП</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="ml-auto collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-4">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Главная</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./trading.html">Розничная торговля</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./online-trading.html">Онлайн торговля</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+        </form>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="mb-2">
+          <h2 class="text-center mb-3">Общая система налогообложения (ОСН)</h2>
+          <p><b class="ml-5">Общая система налогообложения</b> является основной и применяется по умолчанию,
+              если индивидуальный предприниматель не подал в налоговый орган заявление о
+              переходе на один из специальных налоговых режимов в течение месяца со дня регистрации ИП.</p>
+            <p class="ml-5">ИП на общей системе налогообложения (ОСН) должен платить следующие налоги:</p>
+        </div>
+        <div class="table-responsive mb-5">
+            <table class="table">
+              <tr>
+                  <th style="width: 11rem;">Налог</th>
+                  <th style="width: 10rem;">Периодичность уплаты</th>
+                  <th>График уплаты налога</th>
+                  <th style="width: 11rem;;">Ссылка на пример расчета налога</th>
+              </tr>
+              <tr>
+                <td rowspan="4">1) Налог на доходы физических лиц за себя (НДФЛ)</td>
+                <td rowspan="4">4 раза в год</td>
+                <td>1) До 27.04 текущего года авансовый платеж за 1 квартал текущего года</td>
+                <td rowspan="4"><a href="./calc.html">Пример</a></td>
+              </tr>
+              <tr>
+                <td>2) До 15.07 текущего года доплата по налогу за предыдущий год</td>
+              </tr>
+              <tr>
+                <td>3) До 27.07 текущего года авансовый платеж за полугодие текущего года</td>
+              </tr>
+              <tr>
+                <td>4) До 26.10 текущего года авансовый платеж за 9 месяцев текущего года</td>
+              </tr>
+              <tr>
+                <td>2) Налог на добавленную стоимость (НДС)</td>
+                <td>Каждый месяц</td>
+                <td>Сумма НДС за предыдущий квартал делится на три части и выплачивается каждый месяц до 25 числа равными частями</td>
+                <td><a href="#">Пример</a></td>
+              </tr>
+              <tr>
+                <td>3) Налог только на то имущество физического лица, налоговая база которого определяется, исходя из кадастровой стоимости</td>
+                <td>Раз в год</td>
+                <td>Налоговая база – кадастровая стоимость: До 1 декабря следующего года (ставка 2% в отношении объектов недвижимости, предусматривающих размещение офисов, торговых объектов, объектов общественного питания и бытового обслуживания)</td>
+                <td><a href="#">Пример</a></td>
+              </tr>
+              <tr>
+                <td>4) Налог на доходы физический лиц за сотрудников (НДФЛ)</td>
+                <td>В зависимости от количества выплат в пользу работников</td>
+                <td>13% от начисленной заработной платы не позднее следующего рабочего дня после выдачи заработной платы</td>
+                <td><a href="#">Пример</a></td>
+              </tr>
+              <tr>
+                <td>5) Фиксированные взносы за себя</td>
+                <td>Раз в год</td>
+                <td>До 31 декабря текущего года</td>
+                <td><a href="#">Пример</a></td>
+              </tr>
+              <tr>
+                <td rowspan="3">6) Страховые взносы за работников</td>
+                <td rowspan="3">Каждый месяц</td>
+                <td>1) Взносы по пенсионному страхованию (22% от начисленной заработной платы) не позднее 15 числа следующего месяца</td>
+                <td rowspan="3"><a href="#">Пример</a></td>
+              </tr>
+              <tr>
+                <td>2) Взносы по социальному страхованию (2.9% от начисленной заработной платы) не позднее 15 числа следующего месяца</td>
+              </tr>
+              <tr>
+                <td>3) Взносы по обязательному медицинскому страхованию (5.1% от начисленной заработной платы) не позднее 15 числа следующего месяца</td>
+              </tr>
+              <tr>
+                <td>7) Транспортный налог</td>
+                <td>Раз в год</td>
+                <td>До 1 декабря года, идущего за периодом налогообложения</td>
+                <td><a href="#">Пример</a></td>
+              </tr>
+              <tr>
+                <td>8) Акцизы</td>
+                <td>До 25-го числа месяца, следующего за <u>истекшим налоговым периодом</u>***, если иное не предусмотрено ст. 204 НК РФ</td>
+                <td>В зависимости от вида <u>акцизного товара</u> [5]</td>
+                <td><a href="#">Пример</a></td>
+              </tr>
+              <tr>
+                <td>9) Государственная пошлина</td>
+                <td>-</td>
+                <td>Порядок и сроки уплаты госпошлины определяются характером совершаемых юридически значимых действий</td>
+                <td><a href="#">Пример</a></td>
+              </tr>
+            </table>
+        </div>          
+      </div>
+    </div>
+  </section>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
