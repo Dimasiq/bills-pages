@@ -20,3 +20,18 @@ u:hover {
 .colspan {
     text-align: center;
 }
+@media screen and (max-width: 500px)  {
+    .row {
+        padding: 1rem;
+    }
+    .main-content {
+        max-width: 100%;
+    }
+    .lists-cols {
+        flex-direction: column;
+        max-width: 85%;
+    }
+    .lists-cols > div:last-child {
+        margin-left: 0;
+    }
+}

@@ -10,7 +10,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark mb-5 bg-dark">
-      <a class="navbar-brand mb-0 mr-1 h1" href="#">Налоги для ИП</a>
+      <a class="navbar-brand mb-0 mr-1 h1" href="./index.html">Налоги для ИП</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,10 +37,10 @@
       <div class="row">
         <div class="mb-2">
           <h2 class="text-center mb-3">Общая система налогообложения (ОСН)</h2>
-          <p><b class="ml-5">Общая система налогообложения</b> является основной и применяется по умолчанию,
+          <p class="ml-3 w-90"><b>Общая система налогообложения</b> является основной и применяется по умолчанию,
               если индивидуальный предприниматель не подал в налоговый орган заявление о
               переходе на один из специальных налоговых режимов в течение месяца со дня регистрации ИП.</p>
-            <p class="ml-5">ИП на общей системе налогообложения (ОСН) должен платить следующие налоги:</p>
+            <h6 class="ml-5">ИП на общей системе налогообложения (ОСН) должен платить следующие налоги:</h6>
         </div>
         <div class="table-responsive mb-5">
             <table class="table">
@@ -54,7 +54,7 @@
                 <td rowspan="4">1) Налог на доходы физических лиц за себя (НДФЛ)</td>
                 <td rowspan="4">4 раза в год</td>
                 <td>1) До 27.04 текущего года авансовый платеж за 1 квартал текущего года</td>
-                <td rowspan="4"><a href="./calc.html">Пример</a></td>
+                <td rowspan="4"><a href="./trading-example.html">Пример</a></td>
               </tr>
               <tr>
                 <td>2) До 15.07 текущего года доплата по налогу за предыдущий год</td>
@@ -109,8 +109,10 @@
               </tr>
               <tr>
                 <td>8) Акцизы</td>
-                <td>До 25-го числа месяца, следующего за <u>истекшим налоговым периодом</u>***, если иное не предусмотрено ст. 204 НК РФ</td>
-                <td>В зависимости от вида <u>акцизного товара</u> [5]</td>
+                <td>До 25-го числа месяца, следующего за <a data-container="body" data-toggle="popover" data-placement="top" data-content="Истекший налоговый период – это ме-ме-ме...">
+                  <u>истекшим налоговым периодом</u>
+                </a>***, если иное не предусмотрено ст. 204 НК РФ</td>
+                <td>В зависимости от вида <a data-container="body" data-toggle="popover" data-placement="top" data-content="Акцизный товар – это ко-ко-ко..."><u>акцизного товара</u></a></td>
                 <td><a href="#">Пример</a></td>
               </tr>
               <tr>
@@ -127,5 +129,10 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
 </body>
 </html>

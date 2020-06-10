@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Розничная торговля</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5 bg-dark">
+      <a class="navbar-brand mb-0 mr-1 h1" href="./index.html">Налоги для ИП</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="ml-auto collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-4">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Главная</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./trading.html">Розничная торговля</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./online-trading.html">Онлайн торговля</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+        </form>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="text-center mb-3">
+          <h2 class="mb-3">Пример расчета НДФЛ за себя</h2>
+        </div>
+        <div class="main-content mb-5">
+            <p>Условия: Индивидуальный предприниматель Иванов Иван Иванович работает в сфере розничной торговли. Система налогообложения – ОСН. Год – 2020.</p>
+            <p><b>Индивидуальный предприниматель на ОСН в 2020 году должен самостоятельно определять сумму авансовых платежей для уплаты в налоговую.</b> (Теперь не нужно подавать в начале года декларацию 4-НДФЛ и не нужно ждать оповещения из налоговой о размерах авансовых платежей за каждый квартал)</p>
+            <h6>Уплата авансовых платежей по налогу происходит по следующему графику:</h6>
+            <div class="card bg-light card-body">
+              <ol>
+                <li>До 27.04.2020 – авансовый платеж за 1 квартал 2020 г. Индивидуальный предприниматель решил заплатить 200 000 руб.</li>
+                <li>До 27.07.2020 – авансовый платеж за полугодие 2020 г. Было заплачено 300 000 руб.</li>
+                <li>До 26.10.2020 – авансовый платеж за 9 месяцев 2020 г. Было заплачено 600 000 руб.</li>
+              </ol>
+            </div>
+            <br>
+            <p>По прошествии года Иванов Иван Иванович в обязательном порядке подает декларацию 3-НДФЛ, где указывает фактическую сумму дохода за год (10 500 000 руб.). Тогда сумма налога к уплате равна:</p>
+            <div class="card bg-light card-body">
+                10 500 000 руб. * 13% = 1 365 000 руб
+            </div>
+            <br>
+            <p>Отнимаем от суммы исчисленного налога авансовые платежи, которые были перечислены в налоговую:</p>
+            <div class="card bg-light card-body">1 365 000 руб. – (200 000 руб. + 300 000 руб. + 600 000 руб.) = 265 000 руб.</div>
+            <br>
+            <p>Получившийся остаток Индивидуальный предприниматель должен доплатить до 15.07.2021.</p>
+            <a href="#"><u><p>Пример заполнения 3-НДФЛ</p></u></a>
+            <a href="#"><u><p>Чистый бланк 3-НДФЛ</p></u></a>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Розничная торговля</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5 bg-dark">
+      <a class="navbar-brand mb-0 mr-1 h1" href="./index.html">Налоги для ИП</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="ml-auto collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-4">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./trading.html">Розничная торговля</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./online-trading.html">Онлайн торговля</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+        </form>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="text-center mb-3">
+          <h2 class="mb-3">Пример расчета НДФЛ по УСН "доходы - расходы"</h2>
+        </div>
+        <div class="main-content mb-5">
+          <p>Условия: Индивидуальный предприниматель Иванов Иван Иванович работает в сфере розничной онлайн-торговли. Система налогообложения – УСН (доходы минус расходы). Год – 2020.</p>
+          <p>В течение года предприниматель получил следующие доходы и расходы:</p>
+          <div class="card bg-light card-body">
+            <ul style="list-style: none;">
+              <li>За 1 квартал доходы составили 300 000 руб., расходы - 200 000;</li>
+              <li>За 6 месяцев доходы составили 450 000 руб., расходы - 250 000 руб;</li>
+              <li>За 9 месяцев доходы составили 740 000 руб., расходы - 560 000 руб;</li>
+              <li>За год доходы составили 1 400 000 руб., расходы – 1 100 000 руб.</li>
+            </ul>
+          </div>
+          <br>
+          <p>Исчисление налога проведем в несколько действий. В начале определим налоговую базу, равную Доходам за вычетом Расходов.</p>
+          <div class="card bg-light card-body">
+            <ul style="list-style: none;">
+              <li>За 1 квартал: 300 000 – 200 000 = 100 000;</li>
+              <li>За 6 месяцев: 450 000 – 250 000 = 200 000;</li>
+              <li>За 9 месяцев: 740 000 – 560 000 = 180 000;</li>
+              <li>За год: 1 400 000 – 1 100 000 = 300 000.</li>
+            </ul>
+          </div>
+          <br>
+          <p>Теперь рассчитаем сумму Налога, начисленного, исходя из фактической налоговой базы:</p>
+          <div class="card bg-light card-body">
+              <ul style="list-style: none;">
+                  <li>За 1 квартал: 100 000*(15/100) = 15 000;</li>
+                  <li>За 6 месяцев: 200 000*(15/100) = 30 000;</li>
+                  <li>За 9 месяцев: 180 000*(15/100) = 27 000;</li>
+                  <li>За год: 300 000*(15/100) = 45 000.</li>
+              </ul>
+          </div>
+          <br>
+          <p>Определяем размер авансовых платежей к уплате, а также сроки их уплаты:</p>
+          <div class="card bg-light card-body">
+            <ul style="list-style: none;">
+              <li>За 1 квартал до 25.04.2020: 15 000;</li>
+              <li>За 6 месяцев до 25.07.2020: 30 000 - 15 000 = 15 000 к доплате;</li>
+              <li>За 9 месяцев до 25.10.2020: 27 000 – 15 000 – 15 000 = (<span style="color: red;">- 3 000</span>), т.к. рассчитанная сумма меньше 0, то авансовый платеж за 9 месяцев платить не нужно, авансовый платеж = 0;</li>
+            </ul>
+          </div>
+          <br>
+          <p>Теперь рассчитываем сумму налога к уплате за год с учетом произведенных авансовых платежей:</p>
+          <div class="card bg-light card-body">
+            <ul style="list-style: none;">
+              <li>За год до 30.04.2020: 45 000 – 15 000 – 15 000 – 0 = 15 000. Обязательно сравниваем полученную сумму с минимальным налогом. Минимальный налог равен произведению полученного за год дохода на ставку 1% (1 400 000 * 1/100 = 14 000). Поскольку рассчитанный налог больше минимального (15 000 > 14 000), то в бюджет необходимо выплатить 15 000.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+</body>
+</html>
