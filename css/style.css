@@ -29,7 +29,7 @@ u:hover {
     }
     .lists-cols {
         flex-direction: column;
-        max-width: 85%;
+        padding: 0 1rem;
     }
     .lists-cols > div:last-child {
         margin-left: 0;
