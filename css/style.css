@@ -95,6 +95,15 @@ u:hover {
 .colspan {
     text-align: center;
 }
+@media screen and (max-width: 992px)  {
+    .navbar {
+        height: 57px;
+    }
+    .navbar-collapse {
+        padding: 10px;
+        background-color: rgb(32, 51, 71);
+    }
+}
 @media screen and (max-width: 500px)  {
     .row {
         padding: 1rem;
