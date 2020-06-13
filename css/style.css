@@ -7,7 +7,7 @@ body::after {
     background: url(../img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.2;
     top: 0;
     left: 0;
     bottom: 0;
@@ -36,10 +36,10 @@ h6 {
     border: 1px solid lightgray;
     border-radius: 4px;
     background-color: rgba(33, 37, 41, 0.7);
-    color: lightgray;
+    color: #ffffff;
 }
 .lists-cols > div > ul > li > a {
-    color: lightgray;
+    color: #ffffff;
 }
 .collapseList:hover {
     text-decoration: underline;
