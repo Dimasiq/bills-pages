@@ -1,5 +1,73 @@
+body {
+    position: relative;;
+}
+body::after {
+    content: "";
+    min-height: 100vh;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}      
 a {
     color: #212529;
+}
+ul {
+    list-style: none;
+}
+h6 {
+    font-weight: bold;
+}
+.lists-cols > div > ul {
+    padding: 0;
+}
+.lists-cols > div > ul > li {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background-color: rgba(33, 37, 41, 0.7);
+    color: lightgray;
+}
+.lists-cols > div > ul > li > a {
+    color: lightgray;
+}
+.collapseList:hover {
+    text-decoration: underline;
+}
+.submenu > .card {
+    text-decoration: none;
+    border: none;
+    background: rgba(255,255,255,0.7);
+    margin-bottom: 10px;
+}
+.submenu > .card > ul {
+    list-style: circle;
+}
+.submenu > .card > ul > li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.submenu > .card > ul > li:hover {
+    text-decoration: underline;
+}
+.card.bgLight {
+    background: rgba(248,249,250,0.5);
+}
+tbody {
+    background:rgba(248,249,250,0.7);
+}
+.table-ex {
+    text-align: center;
 }
 td { 
     vertical-align: middle;
